@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BOOK</title>
+  </head>
+  <body>
+    <form method="POST" action="/books/<%= it.book.id %>">
+      <label for="book">Book name:</label>
+      <input type="text" id="book" name="book" value="<%= it.book.book %>" /><br/>
+      <label for="pageno">Number of pages:</label>
+      <input type="text" id="pageno" name="pageno" value="<%= it.book.pageno %>" /><br/>
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn" value="<%= it.book.isbn %>" /><br/>
+      <input type="submit" value="Update" />
+    </form>
+    
+    <p><a href="/books">Back to books</a></p>
+  </body>
+</html>

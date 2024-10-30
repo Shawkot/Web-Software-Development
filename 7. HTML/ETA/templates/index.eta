@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello there!</title>
+  </head>
+  <body>
+    <h1>Value for <%= it.object %>: <%= it.value %> (<%= it.math %>)</h1>
+  </body>
+</html>  

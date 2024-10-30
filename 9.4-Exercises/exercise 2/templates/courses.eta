@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>course list</title>
+  </head>
+  <body>
+    <% if(it?.errors?.course?._errors) { %>
+    <p>Course validation error: <%= it?.errors?.course?._errors %></p>
+    <% } %>
+    <form method="POST" action="/courses">
+      <label for="Course name">Course name:</label>
+      <input type="text" id="Course name" name="course" value="<%= it?.submittedData?.course ?? '' %>"/><br/>
+      <input type="submit" value="Add" />
+    </form>
+
+    <p>Existing courses:</p>
+    <ul>
+    <!-- here the second course is the name attribute value in the input tag -->
+    <% it.courses.forEach((course) => { %>
+    <li>
+      <a href='/courses/<%= course.courseId %>'><%= course.course %></a>
+      <form method="POST" action='/courses/<%= course.courseId %>/delete'>
+        <input type="submit" value="Delete">
+      </form>
+    </li>
+    <% }) %>
+    </ul>
+
+  </body>
+</html>
