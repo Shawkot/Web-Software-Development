@@ -1,7 +1,5 @@
-import { Eta } from "https://deno.land/x/eta@v3.4.0/src/index.ts";
-import * as todoService from './todoService.js';
-
-const eta = new Eta({ views: `${Deno.cwd()}/templates/` });
+import { eta } from '../config/etaConfig.js';
+import * as todoService from '../services/todoService.js';
 
 const showForm = async (c) => {
   return c.html(

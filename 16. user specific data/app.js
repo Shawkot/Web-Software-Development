@@ -1,8 +1,8 @@
-import { Hono } from "https://deno.land/x/hono@v3.12.11/mod.ts";
-import * as todoController from './todoController.js';
-import * as authController from './authController.js';
-import * as mainController from "./mainController.js";
-import * as middlewares from './middlewares.js';
+import * as todoController from './controllers/todoController.js';
+import * as authController from './controllers/authController.js';
+import * as mainController from "./controllers/mainController.js";
+import * as middlewares from './middlewares/middlewares.js';
+import { Hono } from './deps.js';
 
 const app = new Hono();
 

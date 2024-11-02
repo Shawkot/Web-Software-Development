@@ -1,4 +1,4 @@
-import * as sessionService from "./sessionService.js";
+import * as sessionService from "../services/sessionService.js";
 
 const accessControlMiddleware = async (c, next) => {
   const authenticated = c.user;
