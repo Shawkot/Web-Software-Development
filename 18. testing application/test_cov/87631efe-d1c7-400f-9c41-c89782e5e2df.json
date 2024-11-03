@@ -1,0 +1,26 @@
+{
+  "scriptId": "315",
+  "url": "file:///home/shawkot/web-software-development/19.%20testing%20application/echo/tests/app_test.js",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 482, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 192, "endOffset": 243, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 295, "endOffset": 343, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 415, "endOffset": 480, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

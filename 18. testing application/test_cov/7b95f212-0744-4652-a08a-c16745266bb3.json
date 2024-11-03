@@ -1,0 +1,16 @@
+{
+  "scriptId": "317",
+  "url": "file:///home/shawkot/web-software-development/19.%20testing%20application/app.js",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 64, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "fun",
+      "ranges": [{ "startOffset": 12, "endOffset": 46, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

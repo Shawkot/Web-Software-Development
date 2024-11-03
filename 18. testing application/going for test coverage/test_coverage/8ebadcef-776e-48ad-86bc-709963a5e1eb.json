@@ -1,0 +1,25 @@
+{
+  "scriptId": "317",
+  "url": "file:///home/shawkot/web-software-development/19.%20testing%20application/going%20for%20test%20coverage/services/helloService.js",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 342, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getHello",
+      "ranges": [{ "startOffset": 52, "endOffset": 79, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "setHello",
+      "ranges": [
+        { "startOffset": 99, "endOffset": 308, "count": 1 },
+        { "startOffset": 135, "endOffset": 161, "count": 0 },
+        { "startOffset": 180, "endOffset": 306, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

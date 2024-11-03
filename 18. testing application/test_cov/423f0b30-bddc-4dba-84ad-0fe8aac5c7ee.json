@@ -1,0 +1,24 @@
+{
+  "scriptId": "317",
+  "url": "file:///home/shawkot/web-software-development/19.%20testing%20application/services/helloService.js",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 249, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getHello",
+      "ranges": [
+        { "startOffset": 56, "endOffset": 153, "count": 2 },
+        { "startOffset": 93, "endOffset": 133, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "setHello",
+      "ranges": [{ "startOffset": 173, "endOffset": 216, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}
