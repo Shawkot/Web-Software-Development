@@ -15,4 +15,10 @@ app.get("/pokemon-happiness/:id", async (c) => {
   return c.json({ happiness });
 });
 
+app.get("/pokemon-evolution-chain/:id", async (c) => {
+  const id = c.req.param("id");
+  const chain = await pokeApi.getPokemonEvolutionChain(id);
+  return c.json({ evolution_chain: chain });
+});
+
 export default app;
