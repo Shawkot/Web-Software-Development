@@ -16,7 +16,15 @@ const useBookStore = () => {
     addBook: (book) => {
       books = [...books, book]
     },
-  };
+    deleteBook: async (id) => {
+      let success = await bookApi.removeBook(id) // Sync the store with the API
+      if (success) {
+        books = books.filter((book) => book.id !== id);
+      }
+    }
+      
+  }
 };
 
-export { initBooks, useBookStore };
+
+export { initBooks, useBookStore }; 

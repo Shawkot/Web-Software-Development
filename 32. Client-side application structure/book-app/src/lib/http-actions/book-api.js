@@ -9,7 +9,7 @@ const createBook = async (book) => {
   const response = await fetch('/api/books', {
     method: "POST",
     headers: {
-      "Content-Type": "application/josn"
+      "Content-Type": "application/json"
     },
     body: JSON.stringify(book)
   });
@@ -23,4 +23,11 @@ const createBook = async (book) => {
   return data;
 }
 
-export { getBooks, createBook };
+const removeBook = async (id) => {
+  const res = await fetch(`/api/books/${id}`, {
+    method: 'DELETE'
+  });
+  if (!res.ok) throw new Error('Failed to delete book');
+  return true;
+}
+export { getBooks, createBook, removeBook };
