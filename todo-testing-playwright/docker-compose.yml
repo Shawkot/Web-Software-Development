@@ -1,0 +1,16 @@
+services:
+  todo-app:
+    build: todo-app
+    restart: unless-stopped
+    volumes:
+      - ./todo-app:/app
+    ports:
+      - 8000:8000
+  
+  playwright:
+    build: playwright
+    network_mode: host
+    depends_on:
+      - todo-app
+    volumes: 
+      - ./playwright/tests:/app/tests
